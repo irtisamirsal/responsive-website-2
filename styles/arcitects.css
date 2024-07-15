@@ -9,6 +9,7 @@
   font-style: normal;
 }
 /* color */
+.dark-1{color: #131313;}
 .dark-2{color: #424242;}
 .dark-3{color: #727272;}
 .bg-color{background-color: rgba(255, 144, 14, 0.1);}
@@ -19,6 +20,7 @@
 
 /* shared style */
 .flex{display:flex;}
+
 .btn-primary{padding: 20px 25px;
 background-color: #FF900E;
 color: white;
@@ -27,6 +29,10 @@ font-weight: 600;
 border-radius: 10px;
 border: none;}
 
+main{max-width: 1440px;
+  margin: 0 auto;
+}
+main > sec{margin-top: 80px;}
 /* header style */
 
 /* nav style */
@@ -47,17 +53,34 @@ font-weight: bold;}
 
 .nav-link{text-decoration: none;
 font-weight: 500;
-font-size: 18px;
+font-size: 1.125rem;
 }
 /* banner content */
-.banner-content{width: 860px;  text-align:center;  margin: 0 auto; margin-bottom: 50px;}
-.banner-title{font-size: 64px;
+.banner-content{max-width: 53.75rem; 
+   text-align:center;
+     margin: 0 auto;
+      margin-bottom: 50px;}
+.banner-title{font-size: 4rem;
 font-weight: 800;}
-.banner-description{font-size: 16px;}
+.banner-description{font-size: 1rem;}
 .banner-image{width: 100%;}
 
 @media screen and (max-width: 576px) {
   .navbar, .nav-links{flex-direction: column;}
 
 }
+
+/* main part */
+.team{
+justify-content: center;
+align-items: center;
+gap: 4.562rem;
+}
+.team-image{display: grid;
+grid-template-columns: repeat(2 , 1fr);
+gap: 1.5rem;}
+.team-content{max-width: 33.125rem;}
+.team-header{font-size: 2.812rem;
+font-weight: 500;
+color: #575757;}
 
