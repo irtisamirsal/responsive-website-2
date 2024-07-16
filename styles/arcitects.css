@@ -82,7 +82,18 @@ gap: 1.5rem;}
 font-weight: 500;
 color: #575757;}
 
-
+/* feature facts */
+.feature-box-contain{margin-top: 100px;}
+.feature-box{padding: 30px;margin-bottom: 20px;
+box-shadow: 0, 7px ,30px, 0 rgba(221, 20, 20, 0.06);
+border-radius: 8px;
+}
+.feature-heading{margin-top:5px;
+  font-size: 4.8rem;
+font-weight: bold;border-left: 8px solid #FF900E;
+padding-left: 30px;
+margin-bottom: 24px;}
+.feature-des{max-width: 586px;}
 
 
 /* some facts */
