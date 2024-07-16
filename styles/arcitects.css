@@ -65,22 +65,36 @@ font-weight: 800;}
 .banner-description{font-size: 1rem;}
 .banner-image{width: 100%;}
 
-@media screen and (max-width: 576px) {
-  .navbar, .nav-links{flex-direction: column;}
 
-}
 
 /* main part */
 .team{
 justify-content: center;
 align-items: center;
-gap: 4.562rem;
+gap: 4rem;
 }
-.team-image{display: grid;
+.team-image{
+  display: grid;
 grid-template-columns: repeat(2 , 1fr);
 gap: 1.5rem;}
 .team-content{max-width: 33.125rem;}
 .team-header{font-size: 2.812rem;
 font-weight: 500;
 color: #575757;}
+
+
+@media screen and (max-width: 576px) {
+  .navbar, 
+  .nav-links ,
+  .team{flex-direction: column;}
+
+.team-image{grid-template-columns: repeat(1, 1fr);
+gap: 1rem;}
+.team-content{text-align: center;}}
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width:992px)
+{.team{flex-direction: column;
+align-items: center;
+text-align: center;}                           }
 
